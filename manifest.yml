@@ -1,0 +1,10 @@
+--- 
+applications:
+  - name: dev-occupancy-rtsp
+    buildpack: https://github.com/OsmosisAI/nodejs-buildpack-ffmpeg.git
+    memory: 128M 
+    instances: 1 
+    host: dev-occupancy-rtsp
+    health-check-type: none
+    domain: cfapps.io  
+    random-route: true
